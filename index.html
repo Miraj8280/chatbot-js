@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot | SciAstra Assignment</title>
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+</head>
+
+<body>
+
+    <!--------------------------------------------------------- 
+                        Navbar
+    ------------------------------------------------------------>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#"><span><img src="assets/logo.png" alt=""></span></a></div>
+            <ul class="menu">
+                <li><a href="#" class="menu-btn">Home</a></li>
+                <li><a href="courses.html" class="menu-btn">Courses</a></li>
+                <li><a href="selections.html" class="menu-btn">Selections</a></li>
+                <li><a href="blogs.html" class="menu-btn">Blogs</a></li>
+                <li><a href="materials.html" class="menu-btn">Materials</a></li>
+                <li><a href="team.html" class="menu-btn">Team</a></li>
+                <li><a href="contact.html" class="menu-btn">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/video_sciastra.mp4" type="video/mp4">
+    </video>
+
+    <!---------------------------------------------------------
+                            Chatbot
+    ------------------------------------------------------------>
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+
+</html>
