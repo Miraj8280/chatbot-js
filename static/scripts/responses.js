@@ -1,7 +1,7 @@
 function getBotResponse(input) {
     input = input.toLowerCase();
     if (input === "go home page") {
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     } 
     else if (input === "materials") {
         window.location.href = "materials.html";
